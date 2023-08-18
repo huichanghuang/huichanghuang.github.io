@@ -19,25 +19,33 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"huichanghuang.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="A home for my scattered notes">
-<meta property="og:type" content="website">
+    <meta name="description" content="一. 基本图形获取数据（np.array)12345678import numpy as npimport matplotlib.pyplot as pltfrom scipy.stats import gaussian_kde# Generate fake dataN&#x3D;10000x &#x3D; np.random.normal(size&#x3D;N)y &#x3D; x * 3 + np.random.normal(si">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Huichang&#39;s Blog">
-<meta property="og:url" content="https://huichanghuang.github.io/index.html">
+<meta property="og:url" content="https://huichanghuang.github.io/2023/08/18/20230818_01_python%E7%BB%98%E5%88%B6%E6%95%A3%E7%82%B9%E5%AF%86%E5%BA%A6%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Huichang&#39;s Blog">
-<meta property="og:description" content="A home for my scattered notes">
+<meta property="og:description" content="一. 基本图形获取数据（np.array)12345678import numpy as npimport matplotlib.pyplot as pltfrom scipy.stats import gaussian_kde# Generate fake dataN&#x3D;10000x &#x3D; np.random.normal(size&#x3D;N)y &#x3D; x * 3 + np.random.normal(si">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691735368536-c2d37fa4-da38-434c-8721-5d4acef082a8.png#averageHue=%239f9c99&clientId=u7466a5d5-dd86-4&from=paste&height=165&id=u2d07d082&originHeight=248&originWidth=367&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=30826&status=done&style=none&taskId=u214e3680-eddf-40ca-8a33-105ead54b0b&title=&width=244.66666666666666">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691735472151-a16c579b-d00e-476f-86de-f00e138ffd82.png#averageHue=%239f9e9c&clientId=u7466a5d5-dd86-4&from=paste&height=165&id=u0e1b3d97&originHeight=248&originWidth=367&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=30508&status=done&style=none&taskId=u37de5d1c-6777-43d9-8830-727451f2e33&title=&width=244.66666666666666">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691735791248-d132486c-7d6b-45e1-8d72-d71a2061e655.png#averageHue=%239e9d9b&clientId=u7466a5d5-dd86-4&from=paste&height=165&id=u9597152f&originHeight=248&originWidth=367&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=33343&status=done&style=none&taskId=u7f24730f-5130-48cc-9723-a73ecdabbf3&title=&width=244.66666666666666">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691738910307-00e4dac2-9b61-4abe-a1bd-9cece564e1cc.png#averageHue=%23c6c1c1&clientId=u7466a5d5-dd86-4&from=paste&height=187&id=u0d13a63e&originHeight=280&originWidth=424&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=43094&status=done&style=none&taskId=u5b5a196e-a2ff-483e-9e0b-872ba7ba59b&title=&width=282.6666666666667">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691738433190-7f887d1a-e82e-405b-872f-fd6a04418dd5.png#averageHue=%23b4b1b1&clientId=u7466a5d5-dd86-4&from=paste&height=292&id=u0e40e72a&originHeight=438&originWidth=443&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=51464&status=done&style=none&taskId=uf36f7ce5-862b-4642-b4fa-693571ec554&title=&width=295.3333333333333">
+<meta property="article:published_time" content="2023-08-18T01:16:31.270Z">
+<meta property="article:modified_time" content="2023-08-18T01:15:49.830Z">
 <meta property="article:author" content="Huichang Huang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/png/975534/1691735368536-c2d37fa4-da38-434c-8721-5d4acef082a8.png#averageHue=%239f9c99&clientId=u7466a5d5-dd86-4&from=paste&height=165&id=u2d07d082&originHeight=248&originWidth=367&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=30826&status=done&style=none&taskId=u214e3680-eddf-40ca-8a33-105ead54b0b&title=&width=244.66666666666666">
 
 
-<link rel="canonical" href="https://huichanghuang.github.io/">
+<link rel="canonical" href="https://huichanghuang.github.io/2023/08/18/20230818_01_python%E7%BB%98%E5%88%B6%E6%95%A3%E7%82%B9%E5%AF%86%E5%BA%A6%E5%9B%BE/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://huichanghuang.github.io/2023/08/18/20230818_01_python%E7%BB%98%E5%88%B6%E6%95%A3%E7%82%B9%E5%AF%86%E5%BA%A6%E5%9B%BE/","path":"2023/08/18/20230818_01_python绘制散点密度图/","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Huichang's Blog</title>
+<title> | Huichang's Blog</title>
   
 
 
@@ -67,7 +75,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Huichang's Blog</h1>
+      <p class="site-title">Huichang's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -89,7 +97,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -102,6 +110,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-%E5%9F%BA%E6%9C%AC%E5%9B%BE%E5%BD%A2"><span class="nav-number">1.</span> <span class="nav-text">一. 基本图形</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE%EF%BC%88np-array"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">获取数据（np.array)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E9%AB%98%E6%96%AF%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">计算高斯密度分布并排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%BB%E5%9B%BE"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">画图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%82%B9%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%92%8C%E9%85%8D%E8%89%B2%EF%BC%88s-cmap"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">修改点的大小和配色（s, cmap)</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-%E8%BF%9B%E9%98%B6%E7%94%BB%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">二. 进阶画法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%85%B3%E6%80%A7%E6%9B%B2%E7%BA%BF-%E6%96%B9%E7%A8%8B"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">添加相关性曲线+方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%E5%92%8Coutlier%E7%99%BE%E5%88%86%E6%AF%94"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">添加置信区间和outlier百分比</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A0%E4%B8%A4%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%86%E5%BA%A6%E5%88%86%E5%B8%83%E5%9B%BE%E5%AD%90%E5%9B%BE%EF%BC%88%E5%88%A9%E7%94%A8sns-JointGrid%EF%BC%89"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">加两变量的密度分布图子图（利用sns.JointGrid）</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -139,16 +148,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://huichanghuang.github.io/2023/08/18/20230818_01_python%E7%BB%98%E5%88%B6%E6%95%A3%E7%82%B9%E5%AF%86%E5%BA%A6%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -162,13 +172,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Huichang's Blog">
+      <meta itemprop="name" content=" | Huichang's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/18/20230818_01_python%E7%BB%98%E5%88%B6%E6%95%A3%E7%82%B9%E5%AF%86%E5%BA%A6%E5%9B%BE/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -191,8 +201,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="一-基本图形"><a href="#一-基本图形" class="headerlink" title="一. 基本图形"></a>一. 基本图形</h1><h4 id="获取数据（np-array"><a href="#获取数据（np-array" class="headerlink" title="获取数据（np.array)"></a>获取数据（np.array)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> gaussian_kde</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate fake data</span></span><br><span class="line">N=<span class="number">10000</span></span><br><span class="line">x = np.random.normal(size=N)</span><br><span class="line">y = x * <span class="number">3</span> + np.random.normal(size=N)</span><br></pre></td></tr></table></figure>
+    <div class="post-body" itemprop="articleBody"><h1 id="一-基本图形"><a href="#一-基本图形" class="headerlink" title="一. 基本图形"></a>一. 基本图形</h1><h4 id="获取数据（np-array"><a href="#获取数据（np-array" class="headerlink" title="获取数据（np.array)"></a>获取数据（np.array)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> gaussian_kde</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate fake data</span></span><br><span class="line">N=<span class="number">10000</span></span><br><span class="line">x = np.random.normal(size=N)</span><br><span class="line">y = x * <span class="number">3</span> + np.random.normal(size=N)</span><br></pre></td></tr></table></figure>
 <h4 id="计算高斯密度分布并排序"><a href="#计算高斯密度分布并排序" class="headerlink" title="计算高斯密度分布并排序"></a>计算高斯密度分布并排序</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Calculate the point density</span></span><br><span class="line">xy = np.vstack([x,y])  <span class="comment">#  将两个维度的数据叠加</span></span><br><span class="line">z = gaussian_kde(xy)(xy)  <span class="comment"># 建立概率密度分布，并计算每个样本点的概率密度</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Sort the points by density, so that the densest points are plotted last</span></span><br><span class="line">idx = z.argsort()</span><br><span class="line">m, n, z = x[idx], y[idx], z[idx]</span><br></pre></td></tr></table></figure>
 <h4 id="画图"><a href="#画图" class="headerlink" title="画图"></a>画图</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fig, ax = plt.subplots()</span><br><span class="line">plt.scatter(x, y,c=z, s=<span class="number">20</span>,cmap=<span class="string">&#x27;Spectral&#x27;</span>) <span class="comment"># c表示标记的颜色,colorbar反向在颜色名称后面加_r,比如：cmap=&#x27;Spectral_r&#x27;。</span></span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/975534/1691735368536-c2d37fa4-da38-434c-8721-5d4acef082a8.png#averageHue=%239f9c99&clientId=u7466a5d5-dd86-4&from=paste&height=165&id=u2d07d082&originHeight=248&originWidth=367&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=30826&status=done&style=none&taskId=u214e3680-eddf-40ca-8a33-105ead54b0b&title=&width=244.66666666666666" alt="image.png"></p>
@@ -205,7 +214,6 @@
 <h4 id="加两变量的密度分布图子图（利用sns-JointGrid）"><a href="#加两变量的密度分布图子图（利用sns-JointGrid）" class="headerlink" title="加两变量的密度分布图子图（利用sns.JointGrid）"></a>加两变量的密度分布图子图（利用sns.JointGrid）</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Generate fake data</span></span><br><span class="line">N=<span class="number">10000</span></span><br><span class="line">x = np.random.normal(size=N)</span><br><span class="line">y = x * <span class="number">3</span> + np.random.normal(size=N)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">mylinerfunc</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x*slope + intercept</span><br><span class="line"></span><br><span class="line"><span class="comment">###求解：sum(abs(y-x)&gt;0.05)/len(x)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">outlier</span>(<span class="params">x, y, num=<span class="number">5</span></span>):</span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    dot5 = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i,j <span class="keyword">in</span> <span class="built_in">zip</span>(x, y):</span><br><span class="line">        total += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">abs</span>(i-j)&gt; num:</span><br><span class="line">            dot5 += <span class="number">1</span></span><br><span class="line">    outlier = <span class="built_in">str</span>(<span class="built_in">round</span>(dot5*<span class="number">100</span>/total, <span class="number">3</span>)) +<span class="string">&quot;%&quot;</span></span><br><span class="line">    <span class="keyword">return</span> outlier</span><br><span class="line"></span><br><span class="line">slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)</span><br><span class="line">regression_equation = <span class="string">&quot;y=&quot;</span> + <span class="built_in">str</span>(<span class="built_in">round</span>(slope, <span class="number">3</span>)) + <span class="string">&quot;x+&quot;</span> + <span class="built_in">str</span>(<span class="built_in">round</span>(intercept, <span class="number">3</span>))</span><br><span class="line">mymodel = <span class="built_in">list</span>(<span class="built_in">map</span>(mylinerfunc, x))</span><br><span class="line">y_pred = mymodel</span><br><span class="line"></span><br><span class="line"><span class="comment">###calculate the 95% confidence interval</span></span><br><span class="line">std = np.std(y_pred)</span><br><span class="line">std_z = <span class="number">1.96</span> <span class="comment">##from z table for 95% confidence interval</span></span><br><span class="line">confidence_interval = <span class="built_in">round</span>(std*std_z,<span class="number">3</span>) <span class="comment">###this can be change to any number in np.float type, eg, np.float64(5)</span></span><br><span class="line"><span class="comment">###calculate the percentage of outlier(out of 95% confidence interval)</span></span><br><span class="line">outlier_rate = outlier(x, y, num=confidence_interval)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Calculate the point density</span></span><br><span class="line">xy = np.vstack([x,y])</span><br><span class="line">z = gaussian_kde(xy)(xy)</span><br><span class="line"><span class="comment">#sort the points by density, so that the densest points are plotted last</span></span><br><span class="line">idx = z.argsort()</span><br><span class="line">m, n, z = x[idx], y[idx], z[idx]</span><br><span class="line">g = sns.JointGrid()</span><br><span class="line">sns.scatterplot(m, n, c=z, s=<span class="number">1</span>, marker=<span class="literal">None</span>, edgecolors=<span class="literal">None</span>, cmap=<span class="string">&quot;Spectral_r&quot;</span>, ax=g.ax_joint)</span><br><span class="line">sns.kdeplot(x=m, fill=<span class="literal">False</span>, linewidth=<span class="number">2</span>, ax=g.ax_marg_x)</span><br><span class="line">sns.kdeplot(y=n, fill=<span class="literal">False</span>, linewidth=<span class="number">2</span>, ax=g.ax_marg_y)</span><br><span class="line">g.ax_joint.plot(x, y_pred, color=<span class="string">&quot;steelblue&quot;</span>, linewidth=<span class="number">0.8</span>)</span><br><span class="line">g.ax_joint.plot(x, np.array(y_pred+confidence_interval), color=<span class="string">&quot;red&quot;</span>, linestyle=<span class="string">&quot;--&quot;</span>)</span><br><span class="line">g.ax_joint.plot(x, np.array(y_pred-confidence_interval), color=<span class="string">&quot;red&quot;</span>, linestyle=<span class="string">&quot;--&quot;</span>)</span><br><span class="line"><span class="comment">###add grid</span></span><br><span class="line">g.ax_joint.grid(<span class="literal">True</span>)</span><br><span class="line"><span class="comment">###add text</span></span><br><span class="line">g.ax_joint.text(<span class="number">0.05</span>, <span class="number">0.95</span>, regression_equation, color=<span class="string">&quot;black&quot;</span>,transform=g.ax_joint.transAxes, fontsize=<span class="number">14</span>, verticalalignment=<span class="string">&#x27;top&#x27;</span>) <span class="comment">##相对位置</span></span><br><span class="line">g.ax_joint.text(<span class="number">0.05</span>, <span class="number">0.90</span>, <span class="string">&quot;Percentage of outlier: &quot;</span>+outlier_rate, color=<span class="string">&quot;red&quot;</span>,transform=g.ax_joint.transAxes, fontsize=<span class="number">14</span>, verticalalignment=<span class="string">&#x27;top&#x27;</span>) <span class="comment">##相对位置</span></span><br><span class="line">g.set_axis_labels(<span class="string">&quot;ILMN normalized coverage&quot;</span>, <span class="string">&quot;Cygnus normalized coverage&quot;</span>)</span><br><span class="line"><span class="comment"># g.savefig(&quot;scatter.png&quot;, dpi=300)</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://cdn.nlark.com/yuque/0/2023/png/975534/1691738433190-7f887d1a-e82e-405b-872f-fd6a04418dd5.png#averageHue=%23b4b1b1&clientId=u7466a5d5-dd86-4&from=paste&height=292&id=u0e40e72a&originHeight=438&originWidth=443&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=51464&status=done&style=none&taskId=uf36f7ce5-862b-4642-b4fa-693571ec554&title=&width=295.3333333333333" alt="image.png"><br>注意：<br>如果要锁轴，则需要在<code>g = sns.JointGrid()</code>中指定xlim和ylim的值；<br>plt中对应的一些参数设置，在JointGrid依然成立，但是需要更改为对应的图轴，比如plt.plot，要改成g.ax_joint.plot，ax默认是ax&#x3D;g.ax_joint，除非指定ax&#x3D;g.ax_marg_x或者ax&#x3D;g.ax_marg_y。加text的时候想用相对坐标时，transform&#x3D;g.ax_joint.transAxes。</p>
 
-      
     </div>
 
     
@@ -213,218 +221,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/17/20230817_02_hexo_blog/" rel="prev" title="Hexo + Github Pages 搭建个人博客">
+                  <i class="fa fa-angle-left"></i> Hexo + Github Pages 搭建个人博客
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://huichanghuang.github.io/2023/08/17/20230817_02_hexo_blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Huichang Huang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Huichang's Blog">
-      <meta itemprop="description" content="A home for my scattered notes">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Huichang's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/17/20230817_02_hexo_blog/" class="post-title-link" itemprop="url">Hexo + Github Pages 搭建个人博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2023-08-17 13:45:51 / Modified: 14:55:12" itemprop="dateCreated datePublished" datetime="2023-08-17T13:45:51+08:00">2023-08-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，支持 GitHub Flavored Markdown 的所有功能，同时可以方便生成静态网页托管在GitHub和Heroku上，是搭建博客的首选框架。</p>
-<h4 id="前置工作如下，比较简单，不多赘述"><a href="#前置工作如下，比较简单，不多赘述" class="headerlink" title="前置工作如下，比较简单，不多赘述"></a>前置工作如下，比较简单，不多赘述</h4><ol>
-<li>注册github账号, <a target="_blank" rel="noopener" href="https://github.com/">github官网</a></li>
-<li>安装git, <a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a></li>
-<li>安装node.js, <a target="_blank" rel="noopener" href="https://nodejs.org/cn/">node.js官网</a></li>
-<li>本地新建一个文件夹存放博客源文件</li>
-</ol>
-<h4 id="创建github远程托管仓库"><a href="#创建github远程托管仓库" class="headerlink" title="创建github远程托管仓库"></a>创建github远程托管仓库</h4><ol>
-<li>到github个人页面点击Repositories，之后再点击New新建一个仓库<br>  <img src="/../images/20230817_02_hexo_1.png" alt="Alt text"><br>  出现以下页面，在Repository name填入对应的信息，必须是自己的github用户名.github.io的格式，然后勾选初始化Add a README file，最后点击右下角Create repository。<br>  <img src="/../images/20230817_02_hexo_2.png" alt="Alt text"> </li>
-<li>创建完成后，在浏览器输出<a target="_blank" rel="noopener" href="https://xxx.github.io/">https://XXX.github.io/</a> （XXX为自己的github用户名）会出来一个非常简陋的网站，类似这样。因为我们后续主要使用hexo搭建，暂时可以不用管网页主题配置啥的。<br>  <img src="/../images/20230817_02_hexo_3.png" alt="Alt text"></li>
-</ol>
-<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><ol>
-<li>打开新建的博客源文件夹，鼠标右键打开<code>git bash here</code><br>  <img src="/../images/20230817_02_hexo_4.png" alt="Alt text"></li>
-<li>打开git的控制台窗口后，输入<code>npm install -g hexo-cli</code> 安装hexo  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">huang@DESKTOP-7FHA4DL MINGW64 /d/Huanghuichang/4.Other/01.Blog/hexo (master)</span><br><span class="line">$ npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line">added 54 packages in 11s</span><br><span class="line"></span><br><span class="line">13 packages are looking for funding</span><br><span class="line">run `npm fund` for details</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="初步生成本地网站配置"><a href="#初步生成本地网站配置" class="headerlink" title="初步生成本地网站配置"></a>初步生成本地网站配置</h4><ol>
-<li>在打开的博客源文件路径下的git控制台窗口输入<code>hexo init</code>初始化本地网站配置  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">huang@DESKTOP-7FHA4DL MINGW64 /d/Huanghuichang/4.Other/01.Blog/hexo (master)</span><br><span class="line">$ hexo init</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure></li>
-<li>完成初始化配置后，输入hexo g生成静态网页<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">huang@DESKTOP-7FHA4DL MINGW64 /d/Huanghuichang/4.Other/01.Blog/hexo (master)</span><br><span class="line">$ hexo g</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded in 1.1 s</span><br><span class="line">INFO  Generated: 20230817_02_hexo_blog.md</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">INFO  Generated: archives/2023/index.html</span><br><span class="line">INFO  Generated: archives/2023/08/index.html</span><br><span class="line">INFO  Generated: archives/2023/08/17/index.html</span><br><span class="line">INFO  Generated: css/style.css</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  Generated: js/script.js</span><br><span class="line">INFO  Generated: about/index.html</span><br><span class="line">INFO  Generated: 404.html</span><br><span class="line">INFO  10 files generated in 1.01 s</span><br></pre></td></tr></table></figure></li>
-<li>输入hexo s打开本地服务器，这时候会出现4000的本地网站地址 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">huang@DESKTOP-7FHA4DL MINGW64 /d/Huanghuichang/4.Other/01.Blog/hexo (master)</span><br><span class="line">$ hexo s</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></li>
-<li>复制地址在浏览器打开就可以看到我们网站的雏形啦<br>  <img src="/../images/20230817_02_hexo_5.png" alt="Alt text"><br>git控制台按ctrl+c关闭本地服务器。</li>
-</ol>
-<h4 id="简单捯饬一下个性化的配置"><a href="#简单捯饬一下个性化的配置" class="headerlink" title="简单捯饬一下个性化的配置"></a>简单捯饬一下个性化的配置</h4><p>  hexo的主题官网有很多可以选择的主题风格<a target="_blank" rel="noopener" href="https://hexo.io/themes/index.html">Hexo themes</a>，点击喜欢的主题一般会跳转到主题的github页面。以Next主题为例, 打开页面的code，然后点击复制链接。<br>  <img src="/../images/20230817_02_hexo_6.png" alt="Alt text"><br>  当前博客源文件路径一般包含下面这些文件和文件<br>  <img src="/../images/20230817_02_hexo_7.png" alt="Alt text"><br>  我们通过<code>git clone https://github.com/next-theme/hexo-theme-next.git themes/next</code>把刚刚复制的主题保存到themes下面，然后在blog路径下，修改_config.yml中的theme为next<br>  <img src="/../images/20230817_02_hexo_8.png" alt="Alt text"><br>  修改完在git控制台依次输入下列命令<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean ## 清除缓存</span><br><span class="line">hexo g ## 生成静态网页</span><br><span class="line">hexo s ## 打开本地服务器</span><br></pre></td></tr></table></figure><br>  然后复制 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 到浏览器打开就可以看到换了主题之后的新网页了<br>  <img src="/../images/20230817_02_hexo_9.png" alt="Alt text"><br>  PS:  有些主题可能不太适配，需要多测试几个。可以更改每个theme下面的_config.yml设置一些页面细节，比如显示的图标，github链接啥的。当前博客的路径下的_config.yml可以设置博客名，作者之类的。</p>
-<h4 id="将本地网站部署到GitHub"><a href="#将本地网站部署到GitHub" class="headerlink" title="将本地网站部署到GitHub"></a>将本地网站部署到GitHub</h4><p>  该步骤前提是需要连接Github与本地，可以参考上一篇文章<a href="https://huichanghuang.github.io/2023/08/14/20230817_01_github_repo/">Github 代码仓管理</a>。</p>
-<ol>
-<li>测试github ssh连接，出现 Hi XXX！表示连接成功  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">huang@DESKTOP-7FHA4DL MINGW64 /d/Huanghuichang/4.Other/01.Blog/hexo (master)</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">Hi huichanghuang! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure></li>
-<li>修改博客的路径下的_config.yml中的deploy配置为以下内容（注意，按照个人实际情况填写）：  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: https://github.com/baiwumm/baiwumm.github.io.git  #你的仓库地址</span><br><span class="line">    branch: master #绑定的仓库分支</span><br></pre></td></tr></table></figure></li>
-<li>安装hexo Git 部署插件<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li><code> hexo g -d</code>生成静态网页并部署至github，出现deploy done就表示成功部署。经常会因为网络的问题部署失败，重试多次就好了。<br>  <img src="/../images/20230817_02_hexo_10.png" alt="Alt text"></li>
-</ol>
-<h4 id="修改github-Page设置"><a href="#修改github-Page设置" class="headerlink" title="修改github Page设置"></a>修改github Page设置</h4><p>  因为一开始创建仓库的时候默认网页是跟main分支关联的，而我们在第六步部署的时候选择了master分支，需要修改一下参数，让github.io跟本地网页存储分支关联起来。<br>  来到XXX&#x2F;XXX.github.io仓库页面，点击Settings进入配置<br>  <img src="/../images/20230817_02_hexo_11.png" alt="Alt text"><br>  再点击左侧Pages进入页面设置<br>  <img src="/../images/20230817_02_hexo_12.png" alt="Alt text"><br>  更改这里的Branch为master，之后必须点Save保存设置。<br>  <img src="/../images/20230817_02_hexo_13.png" alt="Alt text"><br>  然后打开 <a target="_blank" rel="noopener" href="https://xxx.github.io/">https://XXX.github.io/</a> 就会发现跟本地网页展示的内容一致了（如果还没更新的话，可以等等再刷新，或者重新在本地<code>hexo g -d</code>部署一遍就可以了。<br>  <img src="/../images/20230817_02_hexo_14.png" alt="Alt text"></p>
-<p>参考：<br><a target="_blank" rel="noopener" href="https://juejin.cn/post/7111237168168697886">https://juejin.cn/post/7111237168168697886</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35668237">https://zhuanlan.zhihu.com/p/35668237</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://huichanghuang.github.io/2023/08/14/20230817_01_github_repo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Huichang Huang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Huichang's Blog">
-      <meta itemprop="description" content="A home for my scattered notes">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Huichang's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/14/20230817_01_github_repo/" class="post-title-link" itemprop="url">Github 代码仓管理</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-08-14 13:45:51" itemprop="dateCreated datePublished" datetime="2023-08-14T13:45:51+08:00">2023-08-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-08-17 15:00:09" itemprop="dateModified" datetime="2023-08-17T15:00:09+08:00">2023-08-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="首先注册github-略"><a href="#首先注册github-略" class="headerlink" title="首先注册github(略)"></a>首先注册github(略)</h4><h4 id="登陆github-创建仓库"><a href="#登陆github-创建仓库" class="headerlink" title="登陆github, 创建仓库"></a>登陆github, 创建仓库</h4><p>  点击New新建仓库<br>  <img src="/../images/20230817_01_github_repo_1.png" alt="Alt text"></p>
-<h4 id="授权远程服务器（or本地）连接github（前提是安装了git和ssh）"><a href="#授权远程服务器（or本地）连接github（前提是安装了git和ssh）" class="headerlink" title="授权远程服务器（or本地）连接github（前提是安装了git和ssh）"></a>授权远程服务器（or本地）连接github（前提是安装了git和ssh）</h4><ol>
-<li>配置github用户名和邮箱<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;myname&quot;  // 配置用户名     </span><br><span class="line">git config --global user.email &quot;myname@mymail.com&quot;  //配置邮箱 </span><br></pre></td></tr></table></figure></li>
-<li>rsa方式连接<ol>
-<li><code>ssh-keygen</code>创建密钥</li>
-<li>将<code>~/.ssh/id_rsa.pub</code>的内容添加到<a target="_blank" rel="noopener" href="https://github.com/settings/keys">github</a>创建新的key</li>
-<li><code>ssh -T git@github.com</code>连接测试</li>
-<li>出现<code>Hi xxx! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>则表示连接成功</li>
-</ol>
-</li>
-<li>ecdsa方式连接<ol>
-<li><code>ssh-keygen -t ecdsa -b 521 -C &quot;myname@mymail.com&quot;</code>创建密钥</li>
-<li>将<code>~/.ssh/id_ecdsa.pub</code>的内容添加到[github]创建新的key</li>
-<li><code>ssh -T git@github.com</code>连接测试</li>
-<li>出现<code>Hi xxx! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>则表示连接成功</li>
-</ol>
-</li>
-<li>问题排查<br>git push 出现以下报错：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span><br><span class="line">Someone could be eavesdropping on you right now (man-in-the-middle attack)!</span><br><span class="line">It is also possible that a host key has just been changed.</span><br></pre></td></tr></table></figure><br>查了相关资料，猜测可能是GitHub host key有更新: <a target="_blank" rel="noopener" href="https://levelup.gitconnected.com/how-to-deal-with-the-remote-host-identification-has-changed-message-with-github-1dea015dae8d">How To Deal With the “Remote Host Identification Has Changed” Message With GitHub</a><br>需要先通过<code>ssh-keygen -R github.com</code>删除旧的host key，然后再重新连接。<br>但是可能是集群防火墙设置的问题，通过ssh连接一直不成功，最后尝试https方式连接，成功了。参考：<a target="_blank" rel="noopener" href="https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port">在 HTTPS 端口使用 SSH</a><br> 1.  先是通过<code>ssh -T -p 443 git@ssh.github.com</code>测试并生成新的hostkey，出现以下信息, 选择yes, 成功连接.   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &#x27;[ssh.github.com]:443 ([20.201.255.160]:443)&#x27; can&#x27;t be established.</span><br><span class="line">ECDSA key fingerprint is 7b:22:81:1e:4c:66:a5:0d:5a:2e:2e:80:14:3f:24:ca.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)? yes</span><br><span class="line">Warning: Permanently added &#x27;[ssh.github.com]:443,[20.201.255.160]:443&#x27; (ECDSA) to the list of known hosts.</span><br><span class="line">Hi XXX! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
-<pre><code> 2. 添加以下内容至`~/.ssh/config`文件
-</code></pre>
-   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    Hostname ssh.github.com</span><br><span class="line">    Port 443</span><br><span class="line">    User git</span><br></pre></td></tr></table></figure>
-<pre><code> 3. `ssh -T git@github.com`连接测试，成功。
-</code></pre>
-</li>
-</ol>
-<h4 id="初始化本地仓库并提交到远程版本库"><a href="#初始化本地仓库并提交到远程版本库" class="headerlink" title="初始化本地仓库并提交到远程版本库"></a>初始化本地仓库并提交到远程版本库</h4><pre><code>到需要托管的项目目录下，执行以下命令
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin &quot;your github repo url&quot;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-</code></pre>
-<h4 id="git-status查看状态，如果当前分支与远程分支没有差异，则会显示类似如下的信息"><a href="#git-status查看状态，如果当前分支与远程分支没有差异，则会显示类似如下的信息" class="headerlink" title="git status查看状态，如果当前分支与远程分支没有差异，则会显示类似如下的信息"></a><code>git status</code>查看状态，如果当前分支与远程分支没有差异，则会显示类似如下的信息</h4><p>   <img src="/../images/20230817_01_github_repo_2.png" alt="Alt text"><br>   否则显示如下信息<br>    <img src="/../images/20230817_01_github_repo_3.png" alt="Alt text"><br>   此时可以通过<code>git add [path...]</code>从工作区向暂存区提交修改，再利用<code>git commit</code>从暂存区向远程版本库提交修改。<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$git add rule/extract/methydackel_extract.rule</span><br><span class="line">$git commit -m &quot;second commit&quot;</span><br></pre></td></tr></table></figure></p>
-<ol>
-<li>问题排查<br><code>git add</code>出现以下报错：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fatal: Unable to create &#x27;D:/git/xxx/.git/index.lock&#x27;: File exists.</span><br><span class="line"></span><br><span class="line">If no other git process is currently running, this probably means a</span><br><span class="line">git process crashed in this repository earlier. Make sure no other git</span><br><span class="line">process is running and remove the file manually to continue.</span><br></pre></td></tr></table></figure><br>解决方法：删除<code>D:/git/xxx/.git/index.lock</code>文件之后重新提交即可。</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
